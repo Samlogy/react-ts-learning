@@ -1,5 +1,15 @@
 # react-ts-learning
 
+## fork repo & install dependencies
+```bash
+yarn install
+```
+
+## launch project
+```bash
+yarn dev
+```
+
 ## TypeScript
 - basic type
 
