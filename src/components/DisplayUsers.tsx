@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import List from "./List";
 
 type userType = {
   id: number;
@@ -33,16 +34,17 @@ export default function DisplayUsers() {
   }
 
   useEffect(() => {
-    // getUsers();
+    getUsers();
   }, []);
 
   return (
     <div>
       <h2> Users List </h2>
       <>
-        {users.map((user: userType, idx: number) => (
+        {/* {users.map((user: userType, idx: number) => (
           <li key={idx}> {user?.username} </li>
-        ))}
+        ))} */}
+        <List items={users} render={(user: userType) => user?.username} />
       </>
     </div>
   );

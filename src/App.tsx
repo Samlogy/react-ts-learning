@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       {/* <Count /> */}
-      {/* <DisplayUsers />  */}
-      <TodoApp />
+      <DisplayUsers />
+      {/* <TodoApp /> */}
     </div>
   );
 }
