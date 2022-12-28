@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import DisplayUsers from "./components/DisplayUsers";
 import Count from "./components/Count";

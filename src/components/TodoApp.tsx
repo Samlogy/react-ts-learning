@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { typeTodo } from "../App";
-import "./App.css";
 import DATA from "../data.json";
 import TodoList from "./TodoList";
+import InputField from "./InputField";
 
 export default function TodoApp() {
   const [title, setTitle] = useState<string>("");

@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import "./App.css";
 
 interface InputFieldProps {
   title: string;

@@ -6,9 +6,9 @@ interface ISingleTodoProps {
 }
 export default function SingleTodo({ todo, setTodos }: ISingleTodoProps) {
   return (
-    <div>
+    <div className="todo-item">
       <span> {todo?.id} </span>
-      <span> {todo?.title} </span>
+      <span className="todo-item--title"> {todo?.title} </span>
       <button onClick={() => {}}>Edit</button>
       <button onClick={() => {}}>Delete</button>
     </div>
