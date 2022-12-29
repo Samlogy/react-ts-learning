@@ -11,11 +11,11 @@ type filterType = { query: string; result: typeTodo[] };
 export default function TodoApp() {
   const [title, setTitle] = useState<string>("");
   const [todos, setTodos] = useState<Array<typeTodo>>([]);
-
   const [filter, setFilter] = useState<filterType>({
     query: "",
     result: [],
   });
+  const [todoList, seTodoList] = useState<typeTodo[]>([]);
 
   const onHandleAdd = (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,19 +42,22 @@ export default function TodoApp() {
     setFilter({ ...filter, query: value, result });
   };
 
-  console.log("filter: ", filter);
-
   // load todos
   useEffect(() => {
     setTodos(DATA);
+    seTodoList(DATA);
   }, []);
+
+  useEffect(() => {
+    seTodoList(filter.result);
+  }, [filter?.query]);
 
   return (
     <div>
       <h2> Todo App </h2>
       <InputField title={title} setTitle={setTitle} onHandleAdd={onHandleAdd} />
       <Filter filter={filter.query} onFilter={onFilter} />
-      <TodoList todos={todos} setTodos={setTodos} />
+      <TodoList todos={todoList} setTodos={setTodos} />
     </div>
   );
 }

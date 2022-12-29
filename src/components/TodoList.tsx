@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { typeTodo } from "../App";
 import SingleTodo from "./SingleTodo";
 
@@ -12,6 +13,15 @@ export default function TodoList({ todos, setTodos }: ITodoListProps) {
     if (!data) return false;
     return true;
   };
+  // const todosMemo = useMemo(
+  //   () =>
+  //     todos?.map((todo: typeTodo) => (
+  //       <SingleTodo key={todo.id} todo={todo} setTodos={setTodos} />
+  //     )),
+  //   []
+  // );
+
+  // console.log("memo: ", todosMemo);
   return (
     <div>
       <h3>List</h3>
