@@ -20,12 +20,12 @@ export default function App() {
     <div className="App">
       {/* <Count /> */}
       {/* <DisplayUsers /> */}
-      {/* <TodoApp /> */}
+      <TodoApp />
       {/* <UseEffectCpt /> */}
       {/* <UseRefCpt /> */}
       {/* <UseReducerCpt /> */}
       {/* <UseContextCpt /> */}
-      <CustomHookCpt />
+      {/* <CustomHookCpt /> */}
     </div>
   );
 }

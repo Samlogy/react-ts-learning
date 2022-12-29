@@ -14,11 +14,14 @@ export default function TodoList({ todos, setTodos }: ITodoListProps) {
   };
   return (
     <div>
-      {!isEmpty(todos)
-        ? todos?.map((todo: typeTodo) => (
-            <SingleTodo key={todo.id} todo={todo} setTodos={setTodos} />
-          ))
-        : "Todos Empty !"}
+      <h3>List</h3>
+      <div>
+        {!isEmpty(todos)
+          ? todos?.map((todo: typeTodo) => (
+              <SingleTodo key={todo.id} todo={todo} setTodos={setTodos} />
+            ))
+          : "Todos Empty !"}
+      </div>
     </div>
   );
 }

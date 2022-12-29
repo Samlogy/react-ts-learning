@@ -4,8 +4,12 @@
   padding: 2rem;
 }
 
+h3 {
+  margin: .25em
+}
+
 .todo-item {
-  width: 20em;
+  width: 80%;
 }
 .todo-item--title {
   width: 80%;

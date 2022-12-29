@@ -13,25 +13,28 @@ const InputField: React.FC<InputFieldProps> = ({
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <form
-      className="input"
-      onSubmit={(e) => {
-        onHandleAdd(e);
-        inputRef.current?.blur();
-      }}
-    >
-      <input
-        type="text"
-        placeholder="Enter a Todo"
-        value={title}
-        ref={inputRef}
-        onChange={(e) => setTitle(e.target.value)}
-        className="input__box"
-      />
-      <button type="submit" className="input_submit">
-        GO
-      </button>
-    </form>
+    <div>
+      <h3>Add Todo</h3>
+      <form
+        className="input"
+        onSubmit={(e) => {
+          onHandleAdd(e);
+          inputRef.current?.blur();
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Enter a Todo"
+          value={title}
+          ref={inputRef}
+          onChange={(e) => setTitle(e.target.value)}
+          className="input__box"
+        />
+        <button type="submit" className="input_submit">
+          GO
+        </button>
+      </form>
+    </div>
   );
 };
 
