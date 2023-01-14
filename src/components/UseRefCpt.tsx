@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 function UseRefCpt() {
   const [value, setValue] = useState<string | undefined>();
   const inputRef = useRef<HTMLInputElement | null>(null);
+
   function focusInput(): void {
     inputRef.current?.focus();
   }
@@ -10,7 +11,7 @@ function UseRefCpt() {
     const value = inputRef.current?.value;
     setValue(value);
   }
-  //   console.log("ici");
+
   return (
     <div>
       <input ref={inputRef} />

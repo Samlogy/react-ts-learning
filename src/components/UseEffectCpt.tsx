@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 
 function UseEffectCpt() {
-  const [val, valSet] = useState(1);
+  const [time, setTime] = useState(1);
 
   useEffect(() => {
     const timer = window.setInterval(() => {
-      valSet((v) => v + 1);
+      setTime((prev) => prev + 1);
     }, 1000);
     return () => window.clearInterval(timer);
   }, []);
 
-  return <div>{val}</div>;
+  return <div>{time}</div>;
 }
 
 export default UseEffectCpt;
