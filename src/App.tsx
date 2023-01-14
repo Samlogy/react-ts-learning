@@ -43,7 +43,7 @@ export default function App() {
       {/* <ForwardRef parentRef={count} /> */}
       {/* <UseTransitionCpt /> */}
       {/* <UseDefferedValue /> */}
-      <HocLoading isLoading={false} />
+      {/* <HocLoading isLoading={false} /> */}
     </div>
   );
 }
