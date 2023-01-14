@@ -8,7 +8,8 @@ import UseEffectCpt from "./components/UseEffectCpt";
 import UseReducerCpt from "./components/UseReducerCpt";
 import UseContextCpt from "./components/UseContextCpt";
 import CustomHookCpt from "./components/CustomHookCpt";
-import { useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import UserApp from "./components/UserApp";
 
 export type typeTodo = {
   userId: number;
@@ -18,7 +19,7 @@ export type typeTodo = {
 };
 
 export default function App() {
-  const count = useRef<number>(1);
+  // const count = useRef<number>(1);
   return (
     <div className="App">
       {/* <Count /> */}
@@ -29,7 +30,8 @@ export default function App() {
       {/* <UseReducerCpt /> */}
       {/* <UseContextCpt /> */}
       {/* <CustomHookCpt /> */}
-      <ForwardRef parentRef={count} />
+      {/* <ForwardRef parentRef={count} /> */}
+      <UserApp />
     </div>
   );
 }
