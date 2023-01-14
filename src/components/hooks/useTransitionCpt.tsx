@@ -1,5 +1,5 @@
 import React, { useTransition, useState } from "react";
-import { generateProducts } from "../helpers/functions";
+import { generateProducts } from "../../helpers/functions";
 
 export default function UseTransitionCpt() {
   const [isPending, startTransition] = useTransition();

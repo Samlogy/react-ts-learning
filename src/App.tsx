@@ -3,17 +3,17 @@ import DisplayUsers from "./components/DisplayUsers";
 import Count from "./components/countApp/Count";
 import TodoApp from "./components/todoApp/TodoApp";
 import ForwardRef from "./components/ForwardRef";
-import UseRefCpt from "./components/UseRefCpt";
-import UseEffectCpt from "./components/UseEffectCpt";
-import UseReducerCpt from "./components/UseReducerCpt";
-import UseContextCpt from "./components/UseContextCpt";
-import CustomHookCpt from "./components/CustomHookCpt";
+import UseRefCpt from "./components/hooks/UseRefCpt";
+import UseEffectCpt from "./components/hooks/UseEffectCpt";
+import UseReducerCpt from "./components/hooks/UseReducerCpt";
+import UseContextCpt from "./components/hooks/UseContextCpt";
+import CustomHookCpt from "./components/hooks/CustomHookCpt";
 import { useCallback, useEffect, useRef, useState } from "react";
 import UserApp from "./components/userApp/UserApp";
-import UseTransitionCpt from "./components/useTransitionCpt";
-import UseDefferedValue from "./components/UseDefferedValue";
+import UseTransitionCpt from "./components/hooks/useTransitionCpt";
+import UseDefferedValue from "./components/hooks/UseDefferedValue";
 import HOCcpt from "./components/HOCcpt";
-import UseMemoVsCallback from "./components/UseMemoVsCallback";
+import UseMemoVsCallback from "./components/hooks/UseMemoVsCallback";
 
 export type typeTodo = {
   userId: number;
@@ -34,7 +34,7 @@ export default function App() {
       {/* <Count /> */}
       {/* <DisplayUsers /> */}
       {/* <TodoApp /> */}
-      {/* <UserApp /> */}
+      <UserApp />
 
       {/* <UseEffectCpt /> */}
       {/* <UseRefCpt /> */}
@@ -45,7 +45,7 @@ export default function App() {
       {/* <UseTransitionCpt /> */}
       {/* <UseDefferedValue /> */}
       {/* <HocLoading isLoading={false} /> */}
-      <UseMemoVsCallback />
+      {/* <UseMemoVsCallback /> */}
     </div>
   );
 }

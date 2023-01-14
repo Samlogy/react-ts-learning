@@ -1,5 +1,5 @@
 import React, { useDeferredValue, useState } from "react";
-import { generateProducts } from "../helpers/functions";
+import { generateProducts } from "../../helpers/functions";
 
 export default function UseDefferedValue() {
   const [filterTerm, setFilterTerm] = useState("");
