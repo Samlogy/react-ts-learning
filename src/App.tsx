@@ -13,6 +13,7 @@ import UserApp from "./components/userApp/UserApp";
 import UseTransitionCpt from "./components/useTransitionCpt";
 import UseDefferedValue from "./components/UseDefferedValue";
 import HOCcpt from "./components/HOCcpt";
+import UseMemoVsCallback from "./components/UseMemoVsCallback";
 
 export type typeTodo = {
   userId: number;
@@ -44,6 +45,7 @@ export default function App() {
       {/* <UseTransitionCpt /> */}
       {/* <UseDefferedValue /> */}
       {/* <HocLoading isLoading={false} /> */}
+      <UseMemoVsCallback />
     </div>
   );
 }
