@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import { typeTodo } from "../App";
-import DATA from "../data.json";
+import { typeTodo } from "../../App";
+import DATA from "../../data.json";
 import TodoList from "./TodoList";
 import InputField from "./InputField";
 import Filter from "./Filter";

@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { typeTodo } from "../App";
+import { typeTodo } from "../../App";
 import SingleTodo from "./SingleTodo";
 
 interface ITodoListProps {

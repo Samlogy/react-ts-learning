@@ -1,7 +1,7 @@
 import "./App.css";
 import DisplayUsers from "./components/DisplayUsers";
 import Count from "./components/Count";
-import TodoApp from "./components/TodoApp";
+import TodoApp from "./components/todoApp/TodoApp";
 import ForwardRef from "./components/ForwardRef";
 import UseRefCpt from "./components/UseRefCpt";
 import UseEffectCpt from "./components/UseEffectCpt";
@@ -9,7 +9,7 @@ import UseReducerCpt from "./components/UseReducerCpt";
 import UseContextCpt from "./components/UseContextCpt";
 import CustomHookCpt from "./components/CustomHookCpt";
 import { useCallback, useEffect, useRef, useState } from "react";
-import UserApp from "./components/UserApp";
+import UserApp from "./components/userApp/UserApp";
 
 export type typeTodo = {
   userId: number;
@@ -24,13 +24,13 @@ export default function App() {
     <div className="App">
       {/* <Count /> */}
       {/* <DisplayUsers /> */}
-      <TodoApp />
       {/* <UseEffectCpt /> */}
       {/* <UseRefCpt /> */}
       {/* <UseReducerCpt /> */}
       {/* <UseContextCpt /> */}
       {/* <CustomHookCpt /> */}
       {/* <ForwardRef parentRef={count} /> */}
+      <TodoApp />
       <UserApp />
     </div>
   );
