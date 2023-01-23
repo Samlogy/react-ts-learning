@@ -2,6 +2,8 @@ import "./App.css";
 import DisplayUsers from "./components/DisplayUsers";
 import Count from "./components/countApp/Count";
 import TodoApp from "./components/todoApp/TodoApp";
+import PokemonApp from "./components/pokemonApp/PokemonApp";
+
 import ForwardRef from "./components/ForwardRef";
 import UseRefCpt from "./components/hooks/UseRefCpt";
 import UseEffectCpt from "./components/hooks/UseEffectCpt";
@@ -34,7 +36,8 @@ export default function App() {
       {/* <Count /> */}
       {/* <DisplayUsers /> */}
       {/* <TodoApp /> */}
-      <UserApp />
+      {/* <UserApp /> */}
+      <PokemonApp />
 
       {/* <UseEffectCpt /> */}
       {/* <UseRefCpt /> */}
