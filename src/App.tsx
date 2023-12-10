@@ -34,10 +34,10 @@ export default function App() {
   return (
     <div className="App">
       {/* <Count /> */}
-      {/* <DisplayUsers /> */}
+      <DisplayUsers />
       {/* <TodoApp /> */}
       {/* <UserApp /> */}
-      <PokemonApp />
+      {/* <PokemonApp /> */}
 
       {/* <UseEffectCpt /> */}
       {/* <UseRefCpt /> */}
